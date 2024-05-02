@@ -1,0 +1,13 @@
+body {
+  font-family: "Noto Sans", sans-serif;
+  background-color: silver;
+}
+
+header {
+  font-size: 18px;
+  background-color: grey;
+  color: #ffffff;
+  padding:12px;
+}
+
+
