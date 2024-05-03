@@ -22,9 +22,9 @@ function generatePassword(options) {
     characters = characters.join("");
   }
 
-  // 如果使用者沒有勾選任何一個項目
+  // 如果使用者沒有勾選任何一個項目或填寫錯誤
   if (characters.length === 0) {
-    return "Please select at least one valid character.";
+    return "No valid characters were selected.";
   }
 
   let password = "";
