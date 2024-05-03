@@ -15,7 +15,7 @@ This website allows you to create a random password by selecting the elements yo
    $ git clone https://github.com/maomao0007/Random-Password-Generator.git
 2. Navigate to the project directory:
    ```shell
-   $ cd Random-Password-Generator.git
+   $ cd Random-Password-Generator
 3. Install the necessary dependencies:
    ```shell
    $ npm install
