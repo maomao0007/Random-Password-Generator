@@ -11,14 +11,14 @@ app.use(express.static('public'))
 app.use(express.urlencoded({ extended: true }));
 
 app.get("/", (req, res) => {
-  res.render("index", { isResultVisible: false }); // 將 isResultVisible 設置為 false
+  res.render("index");
 });
 
 app.post("/generate", (req, res) => {
   const options = req.body;
   const password = generatePassword(options);
 
-  res.render("index", { password, isResultVisible: true }); // 將生成的密碼和 isResultVisible 設置為 true 傳遞給模板
+  res.render("index", { password: password, options}); 
 });
 
 app.listen(port, () => {

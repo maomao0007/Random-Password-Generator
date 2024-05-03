@@ -1,4 +1,4 @@
-// 假設密碼生成邏輯
+// 密碼生成邏輯
 function generatePassword(options) {
   const lowercaseChars = "abcdefghijklmnopqrstuvwxyz";
   const uppercaseChars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
@@ -19,7 +19,6 @@ function generatePassword(options) {
     // 將字符數組轉換回字符串
     characters = characters.join('');
   }
-
 
   let password = "";
   for (let i = 0; i < options.length; i++) {
