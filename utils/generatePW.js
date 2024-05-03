@@ -13,11 +13,18 @@ function generatePassword(options) {
 
   if (options.excludeCharacters) {
     // 將 characters 轉換為字符數組
-    characters = characters.split('');
+    characters = characters.split("");
     // 使用 filter 方法排除指定的字符
-    characters = characters.filter((character) => !options.excludeCharacters.includes(character));
+    characters = characters.filter(
+      (character) => !options.excludeCharacters.includes(character)
+    );
     // 將字符數組轉換回字符串
-    characters = characters.join('');
+    characters = characters.join("");
+  }
+
+  // 如果使用者沒有勾選任何一個項目
+  if (characters.length === 0) {
+    return "Please select at least one valid character.";
   }
 
   let password = "";
@@ -29,4 +36,5 @@ function generatePassword(options) {
   return password;
 }
 
+// 讓其他程式可以調用 generatePassword 函數
 module.exports = generatePassword;

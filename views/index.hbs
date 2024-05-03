@@ -4,7 +4,7 @@
         <div class="card-body fw-medium">
             <div class="row mx-sm-1 mb-4">
                 <div class="col-5 col-md-4 p-0 pt-2">Password Length</div>
-                <div class="col-7 col-md-8 ps-2 pe-0"><input name="length" class="form-control" type="number" value="{{length}}" min="4" max="16" step="1" required>
+                <div class="col-7 col-md-8 ps-2 pe-0"><input name="length" class="form-control" type="number" value="{{options.length}}" min="4" max="16" step="1" required>
                     <div class="form-text">Length is available between 4 ~ 16</div>
                 </div>
             </div>
@@ -34,7 +34,7 @@
             </div>
             <div class="row mx-sm-1 mb-4">
                 <div class="col-5 col-md-4 p-0 pt-2">Exclude Characters</div>
-                <div class="col-7 col-md-8 ps-2 pe-0"><input name="excludeCharacters" class="form-control" type="text" value="{{#if options.excludeCharacters}}{{/if}}">
+                <div class="col-7 col-md-8 ps-2 pe-0"><input name="excludeCharacters" class="form-control" type="text" value="{{options.excludeCharacters}}">
                     <div class="form-text">These characters will not appear in the password</div>
                 </div>
             </div>
